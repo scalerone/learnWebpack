@@ -1,0 +1,15 @@
+{
+  "name": "learnwebpack",
+  "version": "1.0.0",
+  "description": "Sample webpack project",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "author": "mrwho",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
