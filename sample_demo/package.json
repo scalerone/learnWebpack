@@ -4,7 +4,8 @@
   "description": "Sample webpack project",
   "main": "main.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack",
+    "webpack": "webpack --config webpack.config.js --progress --colors --display-reasons"
   },
   "author": "mrwho",
   "license": "ISC",
