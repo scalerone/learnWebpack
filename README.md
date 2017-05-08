@@ -21,3 +21,5 @@
 [http://webpack.github.io/docs/installation.html](http://webpack.github.io/docs/installation.html)
 
 [https://github.com/petehunt/webpack-howto](https://github.com/petehunt/webpack-howto)
+
+[https://github.com/Rynxiao/webpack-test](https://github.com/Rynxiao/webpack-test)
