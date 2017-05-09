@@ -4,8 +4,8 @@
   "description": "Webpack傻瓜式指南--参考",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --progress --profile --colors --config webpack.production.config.js"
   },
   "author": "",
   "license": "ISC",
