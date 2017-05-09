@@ -1,9 +1,156 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World app</title>
-  </head>
-  <body>
-  <script type="text/javascript" src="bundle.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed: Error: Cannot find module 'jshint'
+  
+  - module.js:20 require
+    internal/module.js:20:19
+  
+  - index.js:8 Object.<anonymous>
+    [sample_demo2]/[_jshint-loader@0.8.4@jshint-loader]/index.js:8:31
+  
+  - module.js:20 require
+    internal/module.js:20:19
+  
+  - loadLoader.js:13 loadLoader
+    [sample_demo2]/[_loader-runner@2.3.0@loader-runner]/lib/loadLoader.js:13:17
+  
+  - LoaderRunner.js:169 iteratePitchingLoaders
+    [sample_demo2]/[_loader-runner@2.3.0@loader-runner]/lib/LoaderRunner.js:169:2
+  
+  - LoaderRunner.js:362 runLoaders
+    [sample_demo2]/[_loader-runner@2.3.0@loader-runner]/lib/LoaderRunner.js:362:2
+  
+  - NormalModule.js:125 NormalModule.doBuild
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/NormalModule.js:125:2
+  
+  - NormalModule.js:173 NormalModule.build
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/NormalModule.js:173:15
+  
+  - Compilation.js:127 Compilation.buildModule
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:127:9
+  
+  - Compilation.js:303 
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:303:10
+  
+  - NormalModuleFactory.js:63 
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/NormalModuleFactory.js:63:13
+  
+  - Tapable.js:196 NormalModuleFactory.applyPluginsAsyncWaterfall
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:196:70
+  
+  - NormalModuleFactory.js:38 onDoneResolving
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/NormalModuleFactory.js:38:11
+  
+  - NormalModuleFactory.js:135 onDoneResolving
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/NormalModuleFactory.js:135:6
+  
+  - NormalModuleFactory.js:130 
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/NormalModuleFactory.js:130:7
+  
+  - async.js:726 
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:726:13
+  
+  - async.js:52 
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:52:16
+  
+  - async.js:246 done
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:246:17
+  
+  - async.js:44 
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:44:16
+  
+  - async.js:723 
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:723:17
+  
+  
+  - Error: Cannot find module 'jshint'
+  
+  - compiler.js:76 
+    [sample_demo2]/[_html-webpack-plugin@2.28.0@html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:251 Compiler.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compiler.js:251:10
+  
+  - Compiler.js:442 
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compiler.js:442:12
+  
+  - Tapable.js:138 next
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:138:11
+  
+  - CachePlugin.js:61 Compiler.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/CachePlugin.js:61:4
+  
+  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:142:13
+  
+  - Compiler.js:439 Compiler.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compiler.js:439:9
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:621 Compilation.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:621:18
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:612 Compilation.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:612:10
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:607 Compilation.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:607:9
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:603 Compilation.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:603:8
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:551 Compilation.seal
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:551:7
+  
+  - Compiler.js:436 Compiler.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compiler.js:436:15
+  
+  - Tapable.js:225 
+    [sample_demo2]/[_tapable@0.2.6@tapable]/lib/Tapable.js:225:11
+  
+  - Compilation.js:444 Compilation.<anonymous>
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:444:10
+  
+  - Compilation.js:420 
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:420:12
+  
+  - Compilation.js:332 
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:332:10
+  
+  - async.js:52 
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:52:16
+  
+  - async.js:246 done
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:246:17
+  
+  - async.js:44 
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:44:16
+  
+  - Compilation.js:332 
+    [sample_demo2]/[_webpack@2.1.0-beta.22@webpack]/lib/Compilation.js:332:10
+  
+  - async.js:52 
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:52:16
+  
+  - async.js:236 Object.async.forEachOf.async.eachOf
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:236:30
+  
+  - async.js:209 Object.async.forEach.async.each
+    [sample_demo2]/[_async@1.5.2@async]/lib/async.js:209:22
+  
+</pre><script type="text/javascript" src="bundle.js"></script>

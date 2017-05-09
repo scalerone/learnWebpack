@@ -14,13 +14,20 @@
 //es2016
 import './main.css';
 import generateText from './sub';
+//2nd way start
 import $ from 'jquery';
+import 'imports-loader?jQuery=jquery!./plugin.js';
+//2nd way end
 import moment from 'moment';
 
 let app  = document.createElement('div');
 const myPromise = Promise.resolve(42);
 myPromise.then((number) => {
+
   $('body').append('<p>promise result is ' + number + ' now is ' + moment().format() + '</p>');
+//call our jquery plugin!
+  $('p').greenify();
+
 });
 app.innerHTML = '<h1>Hello World it</h1>';
 document.body.appendChild(app);
