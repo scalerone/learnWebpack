@@ -24,9 +24,9 @@
 
 [https://github.com/Rynxiao/webpack-test](https://github.com/Rynxiao/webpack-test)
 
-#代码学习参考
-##sample_demo
+# 代码学习参考
+## sample_demo
 [入门Webpack，看这篇就够了](http://www.jianshu.com/p/42e11515c10f)
 
-##sample_demo2
+## sample_demo2
 [Webpack傻瓜式指南](https://github.com/vikingmute/webpack-for-fools)
