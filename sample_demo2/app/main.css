@@ -1,4 +1,4 @@
 h1 {
     color: blue;
-    background: url('./imgs/avatar.jpg');
+    background: url('./imgs/avatar.jpg') no-repeat;
 }

@@ -22,8 +22,17 @@ module.exports = {
       },
       {
         test: /\.(png|jpg)$/,
-        loader: 'url-loader?limit=4000'
+        loader: 'url-loader?limit=40000'
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        include: APP_PATH,
+        query: {
+          presets: ['es2015']
+        }
       }
+     
     ]
   },
   devServer: {

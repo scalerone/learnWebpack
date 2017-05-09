@@ -118,10 +118,14 @@ if(false) {
 // index.js
 __webpack_require__(1);
 var sub = __webpack_require__(0);
+// var $ = require('jquery');
+// var moment = require('moment');
 var app  = document.createElement('div');
 app.innerHTML = '<h1>Hello World webpack</h1>';
 app.appendChild(sub());
 document.body.appendChild(app);
+
+// $('body').append('<p>look at me! now is ' + moment().format() + '</p>');
 
 /***/ }),
 /* 3 */
@@ -132,7 +136,7 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, "h1 {\r\n    color: red;\r\n}", ""]);
+exports.push([module.i, "h1 {\r\n    color: blue;\r\n    background: url(" + __webpack_require__(7) + ");\r\n}", ""]);
 
 // exports
 
@@ -626,6 +630,12 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICI1ZWRjMzgxY2MzMjA1MjYwYWI1ZWYyMzQ5NzJmMTQyMS5qcGciOw=="
 
 /***/ })
 /******/ ]);
