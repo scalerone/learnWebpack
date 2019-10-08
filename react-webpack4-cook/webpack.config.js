@@ -11,6 +11,12 @@ module.exports = {
     },
     module:{},
     plugins:[],
-    devServer:{}
+    devServer:{
+            contentBase:path.join(__dirname,'./dist'),
+            host:'0.0.0.0',
+            port:8080,
+            historyApiFallback:true, // 所有的404都连接到index.html
+
+    }
 }
 
