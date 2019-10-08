@@ -1,0 +1,1 @@
+document.write("造化钟神秀,你是真的秀 webpack4!");
